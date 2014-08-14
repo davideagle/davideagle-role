@@ -1,4 +1,4 @@
-# == Class: role::puppetmaster
+# == Class: role::puppet
 #
 # Webserver role
 #
@@ -22,7 +22,7 @@
 #
 # Copyright 2014 Rob Nelson
 #
-class role::puppetmas {
+class role::puppet {
   include profile::base  # All roles should have the base profile
   include profile::puppet_master
   include profile::puppetdb
