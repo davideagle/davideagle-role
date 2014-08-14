@@ -12,7 +12,7 @@
 #
 # === Examples
 #
-#  include role::puppetmaster
+#  include role::puppet
 #
 # === Authors
 #
@@ -22,9 +22,11 @@
 #
 # Copyright 2014 Rob Nelson
 #
-class role::puppetmaster {
+class role::puppetmas {
   include profile::base  # All roles should have the base profile
-  include profile::puppetdb.pp
-  include profile::mcollective.pp
-  include profile::hiera.pp
+  include profile::puppet_master
+  include profile::puppetdb
+  include profile::hiera
+  include profile::mcollective::users
+  include profile::mcollective::all
 }
