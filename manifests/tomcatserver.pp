@@ -1,4 +1,4 @@
-# == Class: role::webserver
+# == Class: role::tomcatserver
 #
 # Webserver role
 #
@@ -12,7 +12,7 @@
 #
 # === Examples
 #
-#  include role::webserver
+#  include role::tomcatserver
 #
 # === Authors
 #
@@ -22,7 +22,7 @@
 #
 # Copyright 2014 Rob Nelson
 #
-class role::webserver {
+class role::tomcatserver {
   include profile::tomcat_server
   include profile::base  # All roles should have the base profile
 
